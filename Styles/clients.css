@@ -1,0 +1,24 @@
+.sec-back::before {
+  background-image: url('../Media/Clients/clints-back.jpg');
+}
+.container {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 50px;
+}
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.client img {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid var(--primaryLightColor);
+}
+/* .client {
+  color: var(--primaryLightColor);
+} */

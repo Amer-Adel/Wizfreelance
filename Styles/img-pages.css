@@ -1,0 +1,21 @@
+.sec-back::before {
+  background-image: url('../Media/portfolio-background.png');
+}
+.container {
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.container img {
+  border: 6px solid var(--primaryLightColor);
+  border-radius: 14px;
+  transition-duration: .3s;
+  height: 400px;
+}
+.container img:hover {
+  box-shadow: 0px 4px 8px var(--primaryLightColor), 0px -4px 8px var(--primaryLightColor);
+}
+h2 {
+  font-size: 30px;
+  margin: 15px 0;
+  text-align: center;
+}

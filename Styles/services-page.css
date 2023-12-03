@@ -1,0 +1,71 @@
+/* Main Styles */
+main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.product-img {
+  width: 340px;
+  height: 300px;
+  border-radius: 16px;
+  border: 2px solid var(--primaryLightColor);
+}
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+h1 {
+  color: var(--primaryLightColor);
+  margin: 20px 0;
+}
+h1 + p {
+  color: #ccc;
+}
+main div:last-child {
+  color: #eee;
+}
+main ul {
+  padding-right: 30px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+main li {
+  margin: 15px 0;
+}
+main a {
+  margin-top: 25px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 36px;
+  border-radius: 8px;
+  background-color: rgb(40 131 253 / 50%);
+  border: 2px solid var(--primaryLightColor);
+  transition-duration: .3s;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 22px;
+}
+main a:hover {
+  box-shadow: 0 4px 8px var(--primaryLightColor);
+}
+.salary {
+  margin-right: 35px;
+  font-size: 26px;
+}
+
+@media (min-width: 1360px) {
+  main > div:first-child {
+    width: 35%;
+  }
+  main > div:last-child {
+    width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+  main > div:first-of-type {
+    text-align: center;
+  }
+}
